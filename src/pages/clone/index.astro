@@ -1,12 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
+import { GitClone } from '../../components/GitClone';
 ---
 
 <Layout title='AVAnnotate Testing Git Functionality'>
   <main>
     <h1>AVAnnotate</h1>
     <h3>Testing Git Functionality</h3>
-    <a href='/clone'>Clone</a>
+    <GitClone client:only='React' />
   </main>
 </Layout>
 
